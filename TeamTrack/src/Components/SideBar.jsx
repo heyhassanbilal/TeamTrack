@@ -11,7 +11,7 @@ function SideBar() {
   ];
 
   return (
-    <div className="flex bg-gray-900 row-start-2 row-end-12 rounded-xl">
+    <div className="flex bg-gray-900 row-start-2 row-end-12 rounded-xl ">
       {/* Groups Icon Bar */}
       <div className="flex flex-col items-center w-16 bg-gray-800 py-4 space-y-4 rounded-xl">
         {/* User Page*/}
@@ -32,7 +32,6 @@ function SideBar() {
             />
           </div>
         ))}
-
         {/* Add Group Button */}
         <div className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center hover:bg-gray-600 cursor-pointer">
           <span className="text-green-500 font-bold text-2xl">+</span>

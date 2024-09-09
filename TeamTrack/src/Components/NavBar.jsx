@@ -6,7 +6,7 @@ export default function NavBar() {
 
       {/* logo */}
       <div className='flex justify-center flex-none w-1/5'>
-        <h1 className='m-2 font-bold font-ealing text-2xl'><a href=''>TeamTrack</a></h1>
+        <h1 className='m-2 font-bold font-righteous text-2xl'><a href=''>TeamTrack</a></h1>
       </div>
 
       {/* navbar list */}

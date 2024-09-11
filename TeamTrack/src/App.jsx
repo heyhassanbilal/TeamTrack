@@ -1,18 +1,24 @@
 import { useState } from "react";
 import "./App.css";
+import LandingPageComponent from "./Components/LandingPageComponent";
 import LoginPage from "./Components/LoginPage";
-// import NavBar from "./Components/navBar";
-// import LandingPageComponent from "./Components/LandingPageComponent";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import PageNotfound from "./PageNotFound";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <LandingPageComponent />,
+    errorElement: <PageNotfound/>
+  },
+  { path: "/Login", element: <LoginPage /> },
+]);
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <div>
-      {/* <NavBar/> */}
-      {/* <LandingPageComponent /> */}
-      <LoginPage />
-    </div>
+    <>
+      <RouterProvider router={router} />
+    </>
   );
 }
 

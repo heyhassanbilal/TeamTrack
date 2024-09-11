@@ -8,7 +8,6 @@ export default function LoginPage() {
         setShowPassword(!showPassword)
     }
 
-
   return (
     <div className='flex flex-col justify-center h-screen w-screen overflow-hidden'>
         

@@ -38,7 +38,7 @@ export default function LoginPage() {
             />
             <br />
 
-            <label htmlFor="lname" className="text-[#717070]">
+            <label htmlFor="email" className="text-[#717070]">
               email
             </label>
             <br />
@@ -46,19 +46,20 @@ export default function LoginPage() {
               type="email"
               className="bg-[#DADADA] rounded-md h-10 w-56 p-1 mb-4"
               placeholder="example@test.com"
-              id="lname"
-              name="lname"
+              id="email"
+              name="email"
             />
             <br />
 
-            <label htmlFor="register_name" className="text-[#717070]">
+            <label htmlFor="register_password" className="text-[#717070]">
               password
             </label>
             <br />
             <input
               type={showRegisterPassword ? "text" : "password"}
               className="bg-[#DADADA] rounded-md h-10 w-56 mb-7 p-1"
-              name="register_name"
+              name="register_password"
+              id="register_password"
             />
             <i
               onClick={registerToggleShowPassword}
@@ -83,26 +84,27 @@ export default function LoginPage() {
         <div className="w-1/3">
           <h1 className="w-2/3 font-bold text-2xl mb-6 ml-[33%]">login</h1>
           <form className="w-2/3 ml-[33%]">
-            <label htmlFor="login_name" className="text-[#717070]">
+            <label htmlFor="login_email" className="text-[#717070]">
               username / email
             </label>
             <br />
             <input
               className="bg-[#DADADA] rounded-md h-10 w-56 mb-4 p-1 "
               type="text"
-              id="login_name"
-              name="login_name"
+              id="login_email"
+              name="login_email"
             />
             <br />
 
-            <label htmlFor="login_name" className="text-[#717070]">
+            <label htmlFor="login_password" className="text-[#717070]">
               password
             </label>
             <br />
             <input
               type={showLoginPassword ? "text" : "password"}
               className="bg-[#DADADA] rounded-md h-10 w-56 p-1"
-              name="login_name"
+              name="login_password"
+              id="login_password"
             />
             <i
               onClick={loginToggleShowPassword}

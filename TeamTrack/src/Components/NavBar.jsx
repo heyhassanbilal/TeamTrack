@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function NavBar() {
   return (
@@ -22,7 +23,7 @@ export default function NavBar() {
 
       {/* login and profile */}
       <div className='flex justify-center flex-none w-1/5'>
-        <h1 className='m-3 font-semibold hover:font-bold'><a href=''>Log In</a></h1>
+        <h1 className='m-3 font-semibold hover:font-bold'><Link to='/Login-Page'>Log In</Link></h1>
       </div>
 
     </nav>

@@ -2,9 +2,13 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 export default function LoginPage() {
-  const [showPassword, setShowPassword] = useState(false);
-  let toggleShowPassword = () => {
-    setShowPassword(!showPassword);
+  const [showRegisterPassword, setShowRegisterPassword] = useState(false);
+  const [showLoginPassword, setShowLoginPassword] = useState(false);
+  let registerToggleShowPassword = () => {
+    setShowRegisterPassword(!showRegisterPassword);
+  };
+  let loginToggleShowPassword = () => {
+    setShowLoginPassword(!showLoginPassword);
   };
 
   return (
@@ -52,14 +56,14 @@ export default function LoginPage() {
             </label>
             <br />
             <input
-              type={showPassword ? "text" : "password"}
+              type={showRegisterPassword ? "text" : "password"}
               className="bg-[#DADADA] rounded-md h-10 w-56 mb-7 p-1"
               name="register_name"
             />
             <i
-              onClick={toggleShowPassword}
+              onClick={registerToggleShowPassword}
               className={
-                showPassword
+                showRegisterPassword
                   ? "far fa-eye-slash m-[-30px] cursor-pointer"
                   : "far fa-eye m-[-30px] cursor-pointer"
               }
@@ -96,14 +100,14 @@ export default function LoginPage() {
             </label>
             <br />
             <input
-              type={showPassword ? "text" : "password"}
+              type={showLoginPassword ? "text" : "password"}
               className="bg-[#DADADA] rounded-md h-10 w-56 p-1"
               name="login_name"
             />
             <i
-              onClick={toggleShowPassword}
+              onClick={loginToggleShowPassword}
               className={
-                showPassword
+                showLoginPassword
                   ? "far fa-eye-slash m-[-30px] cursor-pointer"
                   : "far fa-eye m-[-30px] cursor-pointer"
               }

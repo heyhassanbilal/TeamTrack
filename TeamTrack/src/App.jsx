@@ -11,7 +11,7 @@ const router = createBrowserRouter([
     element: <LandingPageComponent />,
     errorElement: <PageNotfound />,
   },
-  { path: "/Login", element: <LoginPage /> },
+  { path: "/Login-Page", element: <LoginPage /> },
 ]);
 
 function App() {

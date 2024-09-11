@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import NavBar from "./NavBar.jsx";
+import { Link } from "react-router-dom";
 
 export default function LandingPageComponent({ showlogin }) {
   return (
@@ -14,14 +15,12 @@ export default function LandingPageComponent({ showlogin }) {
           <p className="font-extrabold italic mb-16">
             A Collaborative To-Do List
           </p>
-          <button
+          <Link
             className="flex-none w-[125px] bg-[#D65A31] rounded-2xl py-[2px] font-sans text-s hover:bg-cyan-50 hover:text-[#D65A31] hover:font-bold transition-all duration-300 ease-in-out"
-            onClick={() => {
-              showlogin(true);
-            }}
+            to={"/Login-Page"}
           >
             Get Started
-          </button>
+          </Link>
         </div>
       </div>
     </div>

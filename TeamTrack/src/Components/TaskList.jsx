@@ -20,7 +20,7 @@ function TaskList() {
       className="bg-gray-900 rounded-2xl p-6 max-w-lg mx-auto mt-8 shadow-lg col-start-3 col-span-2 row-span-3"
     >
       <h2 className="text-white text-2xl font-bold mb-4 text-center">
-        <img src="https://via.placeholder.com/50" alt="g" className="w-9"/>
+        <img src="https://via.placeholder.com/50" alt="g" className="w-9" />
         Task List
       </h2>
       <ul className="space-y-3">

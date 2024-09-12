@@ -76,7 +76,7 @@ export default function LoginPage() {
             {/* Sign Up Button */}
             <button
               type="submit"
-              className="bg-black text-white rounded-md px-[4.25rem] py-2 font-bold font-sans text-lg"
+              className="bg-black text-white rounded-md px-[4.25rem] py-2 font-bold font-sans text-lg  border-2 border-solid hover:bg-white hover:text-black  hover:border-black transition-all duration-300 ease-in-out"
             >
               <i className="fa-solid  fa-right-to-bracket mr-2"></i>
               sign up
@@ -138,7 +138,7 @@ export default function LoginPage() {
             {/* Login Button */}
             <button
               type="submit"
-              className="bg-black text-white rounded-md px-[5rem] py-2 font-bold font-sans text-lg"
+              className="bg-black text-white rounded-md px-[5rem] py-2 font-bold font-sans text-lg border-2 border-solid hover:bg-white hover:text-black  hover:border-black transition-all duration-300 ease-in-out"
             >
               <i className="fa-solid fa-right-to-bracket mr-2"></i>
               login

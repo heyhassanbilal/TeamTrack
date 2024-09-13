@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         righteous: ['Righteous', 'sans-serif'], // Add Righteous font
+        inter: ['Inter', 'sans-serif'],
       }
     },
     backgroundImage: {

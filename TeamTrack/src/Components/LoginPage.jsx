@@ -27,7 +27,12 @@ export default function LoginPage() {
           <h1 className="w-2/3 font-bold text-2xl mb-6 ml-[33%]">register</h1>
 
           {/* Register User Name */}
-          <form className="w-2/3 ml-[33%]">
+          <form
+            className="w-2/3 ml-[33%]"
+            onSubmit={(e) => {
+              e.preventDefault();
+            }}
+          >
             <label htmlFor="register_name" className="text-[#717070]">
               username
             </label>
@@ -87,7 +92,12 @@ export default function LoginPage() {
         {/* login */}
         <div className="w-1/3">
           <h1 className="w-2/3 font-bold text-2xl mb-6 ml-[33%]">login</h1>
-          <form className="w-2/3 ml-[33%]">
+          <form
+            className="w-2/3 ml-[33%]"
+            onSubmit={(e) => {
+              e.preventDefault();
+            }}
+          >
             {/* Login UserName/Email */}
             <label htmlFor="login_email" className="text-[#717070]">
               username / email

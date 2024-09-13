@@ -2,10 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-#root {
-  display: grid;
-  min-width: 100vw;
-  min-height: 100vh;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
-}

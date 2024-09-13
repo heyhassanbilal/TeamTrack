@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 import React from "react";
+=======
+import React from 'react'
+import { Link } from 'react-router-dom'
+>>>>>>> 03d6a2bd041f51d7c18404722b564af4fdf668ce
 
 export default function NavBar() {
   return (
@@ -32,10 +37,15 @@ export default function NavBar() {
       </div>
 
       {/* login and profile */}
+<<<<<<< HEAD
       <div className="flex justify-center flex-none w-1/5">
         <h1 className="m-3 font-semibold hover:font-bold">
           <a href="">Log In</a>
         </h1>
+=======
+      <div className='flex justify-center flex-none w-1/5'>
+        <h1 className='m-3 font-semibold hover:font-bold'><Link to='/Login-Page'>Log In</Link></h1>
+>>>>>>> 03d6a2bd041f51d7c18404722b564af4fdf668ce
       </div>
     </nav>
   );

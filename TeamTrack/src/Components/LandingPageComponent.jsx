@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 export default function LandingPageComponent({ showlogin }) {
   return (
-    <div>
+    <div className="bg-[url(./assets/background.png)]">
       <NavBar />
-      <div className="flex justify-center min-h-screen w-screen overflow-hidden bg-[linear-gradient(180deg,#222831_26%,#393E46_78.4%)] text-white">
+      <div className="flex justify-center min-h-screen w-screen overflow-hidden bg-custom-gradient text-white">
         {/* main content */}
         <div className="flex flex-col text-center items-center">
           <h1 className="font-extrabold font-righteous text-6xl mt-[15vh] mb-9">
@@ -16,7 +16,7 @@ export default function LandingPageComponent({ showlogin }) {
             A Collaborative To-Do List
           </p>
           <Link
-            className="flex-none w-[125px] bg-[#D65A31] rounded-2xl py-[2px] font-sans text-s hover:bg-cyan-50 hover:text-[#D65A31] hover:font-bold transition-all duration-300 ease-in-out"
+            className="flex-none w-[125px] bg-[#D65A31] rounded-2xl py-[4px] font-sans text-s hover:bg-cyan-50 hover:text-[#D65A31] hover:font-bold transition-all duration-300 ease-in-out"
             to={"/Login-Page"}
           >
             Get Started

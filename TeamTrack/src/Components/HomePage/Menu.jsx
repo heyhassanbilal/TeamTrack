@@ -24,7 +24,7 @@ export default function Menu() {
           <div className="bg-[#E1E1E1] w-[90%] rounded-2xl ml-3 mt-2">
             <label
               htmlFor="menuSearch"
-              class="fa-solid fa-magnifying-glass pr-2"
+              className="fa-solid fa-magnifying-glass pr-2"
             ></label>
             <input
               type="text"
@@ -42,7 +42,7 @@ export default function Menu() {
           <h1 className="font-bold ml-4">
             Tasks
             <i
-              class={
+              className={
                 hidden
                   ? "text-sm fa-solid fa-chevron-down ml-1"
                   : "text-sm fa-solid fa-chevron-up ml-1"
@@ -50,7 +50,7 @@ export default function Menu() {
               onClick={dropDown}
             ></i>
           </h1>
-          <hr class="border-1 border-[#E1E1E1] w-[90%] mx-auto" />
+          <hr className="border-1 border-[#E1E1E1] w-[90%] mx-auto" />
 
           <div className={hidden ? "hidden" : "p-1"}>
             <Button ButtonIcon={createTask} ButtonText={"Create Task"} />
@@ -64,7 +64,7 @@ export default function Menu() {
         <div className="flex flex-col h-2/5 mt-9 bg-[EEEEEE]">
           {/* heading */}
           <h1 className="font-bold ml-4">Groups</h1>
-          <hr class="border-1 border-[#E1E1E1] w-[90%] my-1 mx-auto" />
+          <hr className="border-1 border-[#E1E1E1] w-[90%] my-1 mx-auto" />
 
           {/* Group List */}
           <div className="flex flex-col h-full bg-[#EEEEEE] w-full justify-center">
@@ -74,7 +74,7 @@ export default function Menu() {
             <Group groupName="Something" />
           </div>
         </div>
-        <hr class="border-1 border-[#E1E1E1] w-[90%] my-1 mx-auto" />
+        <hr className="border-1 border-[#E1E1E1] w-[90%] my-1 mx-auto" />
         <div className="flex flex-col h-1/6 mt-9">
           {/* Settings */}
           <Button ButtonIcon={setting} ButtonText={"Setting"} />

@@ -190,7 +190,6 @@ function SignInForm({ SignInAPI }) {
         setuserCreationStatus("w-56 text-red-600 font-semibold text-center rounded-md p-0 m-0");
         setSignINMessage(err.response.data.message);
       }
-      console.log(err);
     }
   };
 

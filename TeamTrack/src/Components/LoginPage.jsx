@@ -173,8 +173,6 @@ function SignInForm({ SignInAPI }) {
     try {
       const res = await axios.post(SignInAPI, formdata, header);
       message = res.data.message
-      console.log(res);
-      console.log(message);
       if (res.status === 201) {
         setuserCreationStatus("w-56 font-semibold text-lime-600  text-center rounded-md p-0 m-0");
         setSignINMessage(message);

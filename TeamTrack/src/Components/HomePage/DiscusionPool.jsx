@@ -1,19 +1,20 @@
-import { useState } from "react";
-
+import { useEffect, useState } from "react";
+import { useCookies } from "react-cookie";
+import { jwtDecode } from "jwt-decode";
 export default function DiscussionPool() {
-  const [messages, setMessages] = useState([
-    { sender: "Hassan", text: "Hello everyone!", time: new Date() },
-    { sender: "Anuj", text: "Hi!👋", time: new Date() },
-    { sender: "User", text: "Hi!😁", time: new Date() },
-  ]);
+  const [userName, setUserName] = useState("User");
+  const [cookie, setCookie, removeCookie] = useCookies(["token"]);
+  useEffect(() => {
+    setUserName(jwtDecode(cookie.token).sub);
+  }, []);
+  const [messages, setMessages] = useState([]);
 
   const [inputValue, setInputValue] = useState("");
-
   const handleSendMessage = (e) => {
     e.preventDefault();
     if (inputValue.trim()) {
       const newMessage = {
-        sender: "User",
+        sender: userName,
         text: inputValue,
         time: new Date(),
       };
@@ -83,6 +84,7 @@ export default function DiscussionPool() {
             >
               {messages.map((message, index) => (
                 <MessageBubble
+                  User={userName}
                   key={index}
                   messageSender={message.sender}
                   message={message.text}
@@ -121,8 +123,8 @@ export default function DiscussionPool() {
   );
 }
 
-function MessageBubble({ messageSender, message, time }) {
-  const isUser = messageSender === "User";
+function MessageBubble({ User, messageSender, message, time }) {
+  const isUser = messageSender === User;
   const bubbleClass = isUser
     ? " bg-[#1D2D27] rounded-tl-lg rounded-tr-lg rounded-bl-lg self-end "
     : " bg-[#222831] rounded-tl-lg rounded-tr-lg rounded-br-lg self-start ";

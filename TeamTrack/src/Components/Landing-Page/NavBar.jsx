@@ -14,19 +14,19 @@ export default function NavBar() {
       {/* navbar list */}
       <div className="flex-initial w-3/5">
         <ul className="flex flex-row justify-around m-3">
-          <li className="hover:font-semibold">
+          <li className="font-semibold hover:font-bold">
             <a href="">Features</a>
           </li>
-          <li className="hover:font-semibold">
+          <li className="font-semibold hover:font-bold">
             <a href="">Downloads</a>
           </li>
-          <li className="hover:font-semibold">
+          <li className="font-semibold hover:font-bold">
             <a href="">Docs</a>
           </li>
-          <li className="hover:font-semibold">
+          <li className="font-semibold hover:font-bold">
             <a href="">Support</a>
           </li>
-          <li className="hover:font-semibold">
+          <li className="font-semibold hover:font-bold">
             <a href="">Blog</a>
           </li>
         </ul>

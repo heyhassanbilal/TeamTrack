@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import NavBar from "./NavBar.jsx";
 import { Link } from "react-router-dom";
 
-export default function LandingPageComponent({ showlogin }) {
+export default function LandingPage({ showlogin }) {
   return (
     <div className="bg-[url(./assets/background.png)]">
       <NavBar />
